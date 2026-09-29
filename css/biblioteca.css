@@ -7,6 +7,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ecdfd7;
+    padding: 32px;
 }
 
 .container{
@@ -15,15 +16,22 @@ body{
     background-color: #e5ccbc;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 0 0 #9e72566e;
+    transition: 0.3s;
 }
 
+.container:hover{
+    scale: 1.05;
+    box-shadow: 0 0 15px 3px #9e72566e;
+}
 
 input{
     display: block;
+    color: #4d3323;
     width: 100%;
     padding: 8px;
     margin-bottom: 6px;
-    border: none;
+    border: transparent;
     border-radius: 5px;
 }
 
@@ -35,6 +43,12 @@ input::placeholder{
    margin-bottom: 24px; 
 }
 
+input:focus{
+  border-color: #9e7156;
+  box-shadow: 0 0 0 4px #b38450;;
+}
+
+
 button{
     padding: 10px 20px;
     margin-bottom: 24px;
@@ -45,6 +59,7 @@ button{
     cursor: pointer;
     font-size: 15px;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
 }
 
 button:hover{
@@ -60,6 +75,11 @@ button:hover{
 h2{
     color: #8b461a;
     margin-bottom: 10px;
+}
+
+
+#estante{
+    color: #4d3323;
 }
 
 
